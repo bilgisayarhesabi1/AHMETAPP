@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmet Ağa'nın Yeri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <button class="menu-btn" onclick="toggleMenu()">&#9776;</button> <!-- Hamburger Menü Butonu -->
+    <h1>Ahmet Ağa'nın Yeri</h1>
+  </div>
+
+  <!-- Menü Bölümü -->
+  <div id="menu" class="menu">
+    <ul>
+      <li><a href="#" onclick="showFunnies()">Fıkra</a></li>
+      <li><a href="#" onclick="showNotes()">Notlarım</a></li>
+    </ul>
+  </div>
+
+  <!-- Ana İçerik -->
+  <div class="container">
+    <div class="quote-box">
+      <p id="quote-text" class="quote-text">Ahmet Ağa, ilk özlü söz burada görünecek.</p>
+    </div>
+
+    <div id="funnies-section" class="funnies-section" style="display:none;">
+      <h2>Fıkralar</h2>
+      <p id="joke-text"></p>
+      <button onclick="nextJoke()">Bir Fıkra Daha</button>
+    </div>
+
+    <div id="notes-section" class="notes-section" style="display:none;">
+      <h2>Notlarım</h2>
+      <textarea id="note-input" placeholder="Notunuzu buraya yazın..."></textarea>
+      <button onclick="saveNote()">Notu Kaydet</button>
+      <div id="saved-notes"></div>
+    </div>
+
+    <div class="footer">
+      <p>Ahmet Ağa - Özlü Sözler</p>
+    </div>
+  </div>
+
+  <div id="fireworks-container"></div>
+
+  <!-- JavaScript dosyasını burada doğru konumda ekliyoruz -->
+  <script src="script.js"></script>
+</body>
+
+</html>
